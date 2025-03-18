@@ -38,25 +38,133 @@
                             </div>
 
                             <div data-anim-child="slide-up delay-5" class="hero__filter">
-                                <div class="searchForm -type-1 bg-white rounded-200">
-                                    <div class="searchForm__form">
-                                        <div class="searchFormItem js-select-control js-form-dd js-calendar">
-                                            <div class="searchFormItem__button" data-x-click="calendar">
-                                                <div>
-                                                    <span class="js-first-date">Check In - Check Out</span>
-                                                    <span class="js-last-date"></span>
+                                <form action="home-enquiry.php" method="get" id="homeEnquiryForm">
+                                    <div class="searchForm -type-1 bg-white rounded-200">
+                                        <div class="searchForm__form">
+                                            <div class="searchFormItem js-select-control js-form-dd js-calendar">
+                                                <div class="checkincheckoutarea">
+                                                    <div class="searchFormItem__button" data-x-click="calendar">
+                                                        <div>
+                                                            <span class="js-first-date">Check In - Check Out</span>
+                                                            <span class="js-last-date"></span>
+                                                        </div>
+                                                        <i class="icon-arrow-down ml-10"></i>
+                                                    </div>
                                                 </div>
-                                                <i class="icon-arrow-down ml-10"></i>
+
+                                                <div class="searchFormItemDropdown -calendar" data-x="calendar"
+                                                    data-x-toggle="is-active">
+                                                    <div class="searchFormItemDropdown__container">
+                                                        <div class="searchMenu-date -searchForm js-form-dd js-calendar-el">
+                                                            <div class="searchMenu-date__field shadow-2"
+                                                                data-x-dd="searchMenu-date" data-x-dd-toggle="-is-active">
+                                                                <div class="rounded-4">
+                                                                    <div class="elCalendar js-calendar-el-calendar"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="searchFormItemDropdown -calendar" data-x="calendar"
-                                                data-x-toggle="is-active">
-                                                <div class="searchFormItemDropdown__container">
-                                                    <div class="searchMenu-date -searchForm js-form-dd js-calendar-el">
-                                                        <div class="searchMenu-date__field shadow-2"
-                                                            data-x-dd="searchMenu-date" data-x-dd-toggle="-is-active">
-                                                            <div class="rounded-4">
-                                                                <div class="elCalendar js-calendar-el-calendar"></div>
+                                            <div class="searchFormItem js-select-control js-form-dd">
+                                                <div class="roomsarea">
+                                                    <div class="searchFormItem__button" data-x-click="rooms">
+                                                        <div class="js-select-control-chosen js-room-select">Rooms</div>
+                                                        <i class="icon-arrow-down ml-10"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="searchFormItemDropdown -counter" data-x="rooms"
+                                                    data-x-toggle="is-active">
+                                                    <div class="searchFormItemDropdown__container">
+                                                        <div class="searchFormItemDropdown__list">
+                                                            <div
+                                                                class="searchFormItemDropdown__item js-select-control-counter">
+                                                                <div class="fw-500 js-search-title">Rooms</div>
+                                                                <div class="d-flex fw-500 js-search-counter">
+                                                                    <div
+                                                                        class="cursor-pointer size-40 flex-center js-remove">
+                                                                        <i class="custom-icon-minus">
+                                                                            <span></span>
+                                                                        </i>
+                                                                    </div>
+
+                                                                    <div class="size-40 flex-center js-number">
+                                                                        0
+                                                                    </div>
+
+                                                                    <div class="cursor-pointer size-40 flex-center js-add">
+                                                                        <i class="custom-icon-plus">
+                                                                            <span></span>
+                                                                            <span></span>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="searchFormItem js-select-control js-form-dd">
+                                                <div class="guestarea">
+                                                    <div class="searchFormItem__button" data-x-click="guests">
+                                                        <div class="js-select-control-chosen js-select-guest">Guests</div>
+                                                        <i class="icon-arrow-down ml-10"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="searchFormItemDropdown -counter" data-x="guests"
+                                                    data-x-toggle="is-active">
+                                                    <div class="searchFormItemDropdown__container">
+                                                        <div class="searchFormItemDropdown__list">
+                                                            <div
+                                                                class="searchFormItemDropdown__item js-select-control-counter">
+                                                                <div class="fw-500 js-search-title js-adults-select">Adults</div>
+                                                                <div class="d-flex fw-500 js-search-counter">
+                                                                    <div
+                                                                        class="cursor-pointer size-40 flex-center js-remove">
+                                                                        <i class="custom-icon-minus">
+                                                                            <span></span>
+                                                                        </i>
+                                                                    </div>
+
+                                                                    <div class="size-40 flex-center js-number">
+                                                                        0
+                                                                    </div>
+
+                                                                    <div class="cursor-pointer size-40 flex-center js-add">
+                                                                        <i class="custom-icon-plus">
+                                                                            <span></span>
+                                                                            <span></span>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div
+                                                                class="searchFormItemDropdown__item js-select-control-counter">
+                                                                <div class="fw-500 js-search-title js-children-select">
+                                                                    Children
+                                                                </div>
+                                                                <div class="d-flex fw-500 js-search-counter">
+                                                                    <div
+                                                                        class="cursor-pointer size-40 flex-center js-remove">
+                                                                        <i class="custom-icon-minus">
+                                                                            <span></span>
+                                                                        </i>
+                                                                    </div>
+
+                                                                    <div class="size-40 flex-center js-number">
+                                                                        0
+                                                                    </div>
+
+                                                                    <div class="cursor-pointer size-40 flex-center js-add">
+                                                                        <i class="custom-icon-plus">
+                                                                            <span></span>
+                                                                            <span></span>
+                                                                        </i>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -64,113 +172,13 @@
                                             </div>
                                         </div>
 
-                                        <div class="searchFormItem js-select-control js-form-dd">
-                                            <div class="searchFormItem__button" data-x-click="rooms">
-                                                <div class="js-select-control-chosen">Rooms</div>
-                                                <i class="icon-arrow-down ml-10"></i>
-                                            </div>
-                                            <div class="searchFormItemDropdown -counter" data-x="rooms"
-                                                data-x-toggle="is-active">
-                                                <div class="searchFormItemDropdown__container">
-                                                    <div class="searchFormItemDropdown__list">
-                                                        <div
-                                                            class="searchFormItemDropdown__item js-select-control-counter">
-                                                            <div class="fw-500 js-search-title">Rooms</div>
-                                                            <div class="d-flex fw-500 js-search-counter">
-                                                                <div
-                                                                    class="cursor-pointer size-40 flex-center js-remove">
-                                                                    <i class="custom-icon-minus">
-                                                                        <span></span>
-                                                                    </i>
-                                                                </div>
-
-                                                                <div class="size-40 flex-center js-number">
-                                                                    0
-                                                                </div>
-
-                                                                <div class="cursor-pointer size-40 flex-center js-add">
-                                                                    <i class="custom-icon-plus">
-                                                                        <span></span>
-                                                                        <span></span>
-                                                                    </i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="searchFormItem js-select-control js-form-dd">
-                                            <div class="searchFormItem__button" data-x-click="guests">
-                                                <div class="js-select-control-chosen">Guests</div>
-                                                <i class="icon-arrow-down ml-10"></i>
-                                            </div>
-                                            <div class="searchFormItemDropdown -counter" data-x="guests"
-                                                data-x-toggle="is-active">
-                                                <div class="searchFormItemDropdown__container">
-                                                    <div class="searchFormItemDropdown__list">
-                                                        <div
-                                                            class="searchFormItemDropdown__item js-select-control-counter">
-                                                            <div class="fw-500 js-search-title">Adults</div>
-                                                            <div class="d-flex fw-500 js-search-counter">
-                                                                <div
-                                                                    class="cursor-pointer size-40 flex-center js-remove">
-                                                                    <i class="custom-icon-minus">
-                                                                        <span></span>
-                                                                    </i>
-                                                                </div>
-
-                                                                <div class="size-40 flex-center js-number">
-                                                                    0
-                                                                </div>
-
-                                                                <div class="cursor-pointer size-40 flex-center js-add">
-                                                                    <i class="custom-icon-plus">
-                                                                        <span></span>
-                                                                        <span></span>
-                                                                    </i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div
-                                                            class="searchFormItemDropdown__item js-select-control-counter">
-                                                            <div class="fw-500 js-search-title">
-                                                                Children
-                                                            </div>
-                                                            <div class="d-flex fw-500 js-search-counter">
-                                                                <div
-                                                                    class="cursor-pointer size-40 flex-center js-remove">
-                                                                    <i class="custom-icon-minus">
-                                                                        <span></span>
-                                                                    </i>
-                                                                </div>
-
-                                                                <div class="size-40 flex-center js-number">
-                                                                    0
-                                                                </div>
-
-                                                                <div class="cursor-pointer size-40 flex-center js-add">
-                                                                    <i class="custom-icon-plus">
-                                                                        <span></span>
-                                                                        <span></span>
-                                                                    </i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="searchForm__button">
+                                            <button type="submit" class="button -accent-2 bg-accent-1 text-white px-30 rounded-200">
+                                                Send Enquiry
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div class="searchForm__button">
-                                        <button class="button -accent-2 bg-accent-1 text-white px-30 rounded-200">
-                                            Check Availability
-                                        </button>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 
@@ -340,6 +348,9 @@
                         <p data-anim-child="slide-up delay-3" class="lh-18 pr-60 lg:pr-0 mt-10 md:mt-30">
                             The kite flaps off the smell of sun from its wings .
                         </p>
+                        <a href="gallery.php" width="50%" class="button -md -type-2 bg-accent-2 -light-1 mt-40">
+                            View Palash Kothi Gallery
+                        </a>
                     </div>
 
                     <div class="col-lg-6">
@@ -853,8 +864,11 @@
                         </a>
                     </div>
                 </div>
-
+                <a href="gallery.php" width="50%" class="button -md -type-2 bg-accent-2 -light-1 mt-40">
+                    View Complete Gallery
+                </a>
             </div>
+
         </section>
         <!-- Gallery-Section End -->
 

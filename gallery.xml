@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery>
+    <album>
+        <albumname>A_Grand_Arrival</albumname>
+        <albumtitle>A Grand Arrival</albumtitle>
+        <description>Step into luxury with our majestic entrance, where every detail welcomes you to an unforgettable retreat.</description>
+		<mainimage>SLC-121.jpg</mainimage>
+    </album>
+	<album>
+		<albumname>Birds_Eye_Bliss</albumname>
+		<albumtitle>Bird's Eye Bliss</albumtitle>
+		<description>Experience breathtaking aerial views of the resort and the surrounding wilderness, captured through stunning drone imagery.</description>
+		<mainimage>SLC-14.jpg</mainimage>
+	</album>
+    <album>
+        <albumname>Serene_Escapes</albumname>
+        <albumtitle>Serene Escapes</albumtitle>
+        <description>Immerse yourself in the beauty of our lush, manicured grounds—a perfect blend of nature and tranquility.</description>
+		<mainimage>SLC-50.jpg</mainimage>
+    </album>
+    <album>
+        <albumname>Comfort_Redefined</albumname>
+        <albumtitle>Comfort Redefined</albumtitle>
+        <description>Discover our elegantly designed rooms and suites, offering the perfect balance of luxury and comfort amidst the wild.</description>
+		<mainimage>_Y7A7302.JPG</mainimage>
+    </album>
+    <album>
+        <albumname>Gaushala</albumname>
+        <albumtitle>Our Gaushala</albumtitle>
+        <description>Explore our Gaushala, where we lovingly care for our cows, reflecting our commitment to animal welfare and traditional values.</description>
+		<mainimage>_Y7A7428.JPG</mainimage>
+    </album>
+    <album>
+        <albumname>Thrills_Tranquility</albumname>
+        <albumtitle>Thrills &amp; Tranquility</albumtitle>
+        <description>From exhilarating wildlife safaris to peaceful nature walks, explore a range of activities tailored for adventure and relaxation.</description>
+		<mainimage>DSC_0064.JPG</mainimage>
+    </album>
+    <album>
+        <albumname>Into_the_Wild</albumname>
+        <albumtitle>Into the Wild</albumtitle>
+        <description>Situated near Bandhavgarh National Park, our resort offers seamless access to one of India’s most iconic wildlife destinations.</description>
+		<mainimage>tiger1.jpg</mainimage>
+    </album>
+</gallery>
