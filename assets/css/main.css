@@ -11079,3 +11079,10 @@ body.is-cursor-active * {
 .layout-pb-lg-one {
   padding-bottom: 150px;
 }
+.invalid-feedback{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #dc3545;
+    text-align: left;
+}

@@ -39,7 +39,7 @@
                             echo "<p class='lh-17'><strong>Rooms:</strong> " .$rooms. "</p>";
                             echo "<p class='lh-17'><strong>Guests:</strong> " .$guest. "</p>";
                         ?>
-                        <form action="" method="post">
+                        <form action="submit-form-controller.php" method="post" id="homeEnquiryFinalSubmit">
                             <input type="hidden" name="check_in" value="<?php echo $check_in ?>"/>
                             <input type="hidden" name="check_out" value="<?php echo $check_out ?>"/>
                             <input type="hidden" name="rooms" value="<?php echo $rooms ?>"/>
@@ -47,32 +47,32 @@
                             <div class="contactForm row y-gap-30 pt-60">
                                 <div class="col-md-12">
                                     <div class="form-input name">
-                                        <input type="text"  name="name" >
+                                        <input type="text"  name="name" id="name" >
                                         <label class="lh-1 text-16 text-light-1">Name</label>
                                     </div>
                                 </div>
                                 
                                 <div class="col-12">
                                     <div class="form-input email">
-                                        <input type="email" name="email" class="">
+                                        <input type="email" name="email" id="email" class="">
                                         <label class="lh-1 text-16 text-light-1">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-input phone_number">
-                                        <input type="email" name="phone_number" class="">
+                                        <input type="text" name="phone_number" id="phone_number" class="" maxlength="10">
                                         <label class="lh-1 text-16 text-light-1">Phone No.</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-input message">
-                                        <textarea required="" class="border-1" name="message" rows="4"></textarea>
+                                        <textarea class="border-1" name="message" rows="4"></textarea>
                                         <label class="lh-1 ">Message</label>
                                     </div>
 
                                 </div>
                                 <div class="col-12">
-                                    <button class="button -md -type-2 w-1/1 bg-accent-2 -accent-1">SEND YOUR MESSAGE</button>
+                                    <button type="submit" class="button -md -type-2 w-1/1 bg-accent-2 -accent-1">SEND YOUR MESSAGE</button>
                                 </div>
                             </div>
                         </form>

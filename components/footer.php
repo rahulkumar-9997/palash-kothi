@@ -1,3 +1,6 @@
+
+<div id="toast-container" style="position: fixed; top: 10px; right: 10px; z-index: 10000;"></div>
+
 <footer class="footer -type-1 -bg-1 relative text-white">
     <div class="footer__bg -type-1">
         <div class="bg-accent-2"></div>

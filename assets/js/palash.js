@@ -45,5 +45,70 @@ $(document).ready(function(){
         
             window.location.href = "home-enquiry.php?" + queryParams;
         });
+
+        /**Finale form submit */
+        $(document).off('submit', '#homeEnquiryFinalSubmit').on('submit', '#homeEnquiryFinalSubmit', function (event) {
+            event.preventDefault();
+            var form = $(this);
+            var submitButton = form.find('button[type="submit"]');
+            var formData = new FormData(this);
+            $('.form-control').removeClass('is-invalid');
+            $('.invalid-feedback').remove();
+        
+            submitButton.prop('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
+            showToast('danger', "An unknown error occurred.");
+            $.ajax({
+                url: 'submit-form-controller.php',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+                success: function(response) {
+                    submitButton.prop('disabled', false).html('SEND YOUR MESSAGE');
+            
+                    console.log("AJAX Success Response:", response);
+                    if (response.status === 'success') {
+                        showToast('success', response.message);
+                        form[0].reset();
+                    } else if (response.status === 'error' && response.errors) {
+                        $.each(response.errors, function(key, value) {
+                            var inputField = form.find('[name="' + key + '"]');
+                            inputField.addClass('is-invalid');
+            
+                            if (inputField.next('.invalid-feedback').length === 0) {
+                                inputField.after('<div class="invalid-feedback">' + value + '</div>');
+                            }
+                        });
+                    } else {
+                        showToast('danger', "An unknown error occurred.");
+                    }
+                },
+                error: function(xhr) {
+                    submitButton.prop('disabled', false).html('SEND YOUR MESSAGE');
+                    console.log("AJAX Error:", xhr.responseText);
+            
+                    showToast('danger', "An error occurred! Please try again.");
+                }
+            });
+            
+        });
+        function showToast(type, message) {
+            var toastHTML = '<div class="alert alert-' + type + ' alert-dismissible fade show" role="alert">' +
+                message +
+                '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+                '<span aria-hidden="true">&times;</span>' +
+                '</button>' +
+                '</div>';
+        
+            $("#toast-container").html(toastHTML); 
+            setTimeout(function () {
+                $(".alert").fadeOut(500, function () {
+                    $(this).remove();
+                });
+            }, 1000000);
+        }
+        
+        /**Finale form submit */
     
 });
